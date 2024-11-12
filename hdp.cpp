@@ -24,7 +24,8 @@ int main()
 
         cout << endl;
     }
-    for (int i = 0; i < n - 1; i++)
+    // bottom
+    for (int i = 0; i < n - 1; i++) // 0 to n-2
     {
         for (int j = 0; j < i + 1; j++)
         {
@@ -32,6 +33,7 @@ int main()
         }
         cout << "*";
         if (i != n - 2)
+        // space
         {
             for (int j = 0; j < 2 * (n - i) - 5; j++)
             {
@@ -39,7 +41,7 @@ int main()
             }
             cout << "*";
         }
-        cout<<endl;
+        cout << endl;
     }
 
     return 0;
